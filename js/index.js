@@ -23,9 +23,9 @@ var quotes = [
 
 function generateQuote() {
     var randomIndex = Math.floor(Math.random() * quotes.length);
-    var quote = document.getElementById("qoute");
-    var writter = document.getElementById("writter");
+    var quote = document.getElementById("quote"); // Corrected ID
+    var writer = document.getElementById("writer"); // Corrected ID
 
     quote.textContent = quotes[randomIndex].text;
-    writter.textContent = `-- ${quotes[randomIndex].author}`;
+    writer.textContent = `-- ${quotes[randomIndex].author}`;
 }
